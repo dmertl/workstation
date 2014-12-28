@@ -1,0 +1,27 @@
+---
+
+- name: Tap external homebrew repos
+  homebrew_tap: {{ item }} state=present
+  with_items:
+    - homebrew/php
+
+- name: Install dev CLI apps
+  homebrew: {{ item }} state=installed
+  with_items:
+    - git
+    - mysql
+    - python
+    - php56
+    - php56-xdebug
+    - sqlite
+    - subversion
+
+- name: Install dev applications
+  homebrew_cask: {{ item }} state=installed
+  with_items:
+    - phpstorm
+    - pycharm
+    - sequel-pro
+    - vagrant
+    - virtualbox
+    - vmware-fusion

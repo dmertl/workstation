@@ -1,0 +1,9 @@
+---
+- hosts: self
+  user: dmertl
+  connection: local
+  roles:
+    - Common
+    - Dev
+    - Gaming
+    - Pinguhouse

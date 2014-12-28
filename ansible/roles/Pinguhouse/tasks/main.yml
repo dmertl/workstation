@@ -1,0 +1,6 @@
+---
+
+- name: Install Pinghouse apps
+  hombrew_cask: {{ item }} state=installed
+  with_items:
+    - drobo-dashboard

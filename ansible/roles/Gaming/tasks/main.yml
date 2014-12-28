@@ -1,0 +1,8 @@
+---
+
+- name: Installing gaming apps
+  homebrew_cask: {{ item }} state=installed
+  with_items:
+    - minecraft
+    - openemu
+    - steam

@@ -1,0 +1,16 @@
+---
+
+- name: Update homebrew
+  command: brew update
+
+- name: Install common apps
+  homebrew_cask: {{ item }} state=installed
+  with_items:
+    - cleanmymac
+    - evernote
+    - firefox
+    - google-chrome
+    - skype
+    - textmate
+    - transmission
+    - vlc
