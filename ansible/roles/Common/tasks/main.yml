@@ -3,8 +3,18 @@
 - name: Update homebrew
   command: brew update
 
+- name: Tap homebrew repos
+  homebrew_tap: name={{ item }} state=present
+  with_items:
+    - caskroom/cask
+
+- name: Install CLI tools
+  homebrew: name={{ item }} state=installed
+  with_items:
+    - brew-cask
+
 - name: Install common apps
-  homebrew_cask: {{ item }} state=installed
+  homebrew_cask: name={{ item }} state=installed
   with_items:
     - cleanmymac
     - evernote
@@ -13,4 +23,5 @@
     - skype
     - textmate
     - transmission
+    - usb-overdrive
     - vlc
