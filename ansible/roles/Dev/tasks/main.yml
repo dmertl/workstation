@@ -1,12 +1,12 @@
 ---
 
 - name: Tap external homebrew repos
-  homebrew_tap: {{ item }} state=present
+  homebrew_tap: name={{ item }} state=present
   with_items:
     - homebrew/php
 
 - name: Install dev CLI apps
-  homebrew: {{ item }} state=installed
+  homebrew: name={{ item }} state=installed
   with_items:
     - git
     - mysql
@@ -17,7 +17,7 @@
     - subversion
 
 - name: Install dev applications
-  homebrew_cask: {{ item }} state=installed
+  homebrew_cask: name={{ item }} state=installed
   with_items:
     - phpstorm
     - pycharm
@@ -25,3 +25,9 @@
     - vagrant
     - virtualbox
     - vmware-fusion
+
+- name: Copy dotfiles
+  copy: src={{ item }} dest=~/{{ item }}
+  with_items:
+    - .gitconfig
+    - .profile
