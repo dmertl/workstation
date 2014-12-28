@@ -2,6 +2,12 @@
 
 Personal workstation configuration
 
+### TODO
+
+- Get more .profile settings from work computer
+- Get more .gitconfig settings from work computer
+- Other dotfiles?
+
 ## App Store
 
 App Store apps need to be installed through the App Store application.
@@ -47,3 +53,7 @@ Configuration settings that are easier set through the applications that config 
 
 - Show file browser - Left side
 - View - Disable soft wrap
+
+### Misc
+
+- Start and login to all authenticated apps
