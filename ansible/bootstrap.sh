@@ -15,15 +15,20 @@ set -e
 #       * ensure dev tools are installed by checking the output of gcc
 #       * check to see if gcc binary even exists ( original logic )
 # if either of the conditions are met, install dev tools
-if [[ $(/usr/bin/gcc 2>&1) =~ "no developer tools were found" ]] || [[ ! -x /usr/bin/gcc ]]; then
+# if [[ $(/usr/bin/gcc 2>&1) =~ "no developer tools were found" ]] || [[ ! -x /usr/bin/gcc ]]; then
+# Always install Xcode developer tools
     echo "Info   | Install   | xcode"
     xcode-select --install
-fi
+# fi
+
+# Run Xcode tool to agree to license
+echo "Agree to license, ignore any clang errors"
+sudo xcrun cc || true
 
 # Download and install Homebrew
 if [[ ! -x /usr/local/bin/brew ]]; then
     echo "Info   | Install   | homebrew"
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 
@@ -34,8 +39,4 @@ if [[ ! -x /usr/local/bin/ansible ]]; then
     brew install ansible
 fi
 
-# Modify the PATH
-# This should be subsequently updated in shell settings
-export PATH=/usr/local/bin:$PATH
-
-ansible-playbook local.yml -K
+echo "Bootstrap complete. Run ansible-playbook main.yml"
