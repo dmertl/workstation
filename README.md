@@ -7,6 +7,15 @@ Personal workstation configuration
 - Get more .profile settings from work computer
 - Get more .gitconfig settings from work computer
 - Other dotfiles?
+- PHPStorm config
+- PyCharm config
+- ONZRA VPN
+- Sentact VPN
+- General solution for log_www, need logging directory config?
+- Add some variables into .profile for setting things like theme and log directory
+- Terminal themes (peppermint) https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
+ - Theme is added to terminal plist file, ~/Library/Preferences/com.apple.Terminal.plist, need to use app to change plist
+ - May also have problem with changing plist while terminal is running (Terminal will re-write pref file on exit).
 
 ## App Store
 
