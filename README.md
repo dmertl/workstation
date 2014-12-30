@@ -14,8 +14,10 @@ Personal workstation configuration
 - General solution for log_www, need logging directory config?
 - Add some variables into .profile for setting things like theme and log directory
 - Terminal themes (peppermint) https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
- - Theme is added to terminal plist file, ~/Library/Preferences/com.apple.Terminal.plist, need to use app to change plist
- - May also have problem with changing plist while terminal is running (Terminal will re-write pref file on exit).
+ - Can't open the theme file from the command line (needs to be running a GUI service or something).
+ - Can't edit the preferences file for terminal from within terminal (will overwrite the pref file from memory).
+ - Theme is added to terminal plist file, ~/Library/Preferences/com.apple.Terminal.plist
+- Solarized themes used in switching during SSH
 
 ## App Store
 
