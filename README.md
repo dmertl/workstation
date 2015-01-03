@@ -2,6 +2,8 @@
 
 Personal workstation configuration
 
+    ansible-playbook main.yml
+
 ### TODO
 
 - Get more .profile settings from work computer
@@ -13,9 +15,6 @@ Personal workstation configuration
 - Sentact VPN
 - General solution for log_www, need logging directory config?
 - Add some variables into .profile for setting things like theme and log directory
-- Terminal themes (peppermint) https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
- - Theme is added to terminal plist file, ~/Library/Preferences/com.apple.Terminal.plist, need to use app to change plist
- - May also have problem with changing plist while terminal is running (Terminal will re-write pref file on exit).
 
 ## App Store
 
@@ -57,6 +56,17 @@ Configuration settings that are easier set through the applications that config 
 - Advanced - Show all filename extensions
 - Advanced - When performing a search - Search the Current Folder
 - Add dev folder to sidebar
+
+### Terminal
+
+- Add Peppermint theme.
+ - https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
+ - Set as default and open new window theme. 
+
+### Preferences
+
+- Trackpad - Scroll & Zoom - Scroll Direction: Natural - Off
+- Mission Control - Hot Corners - Top Right - Show Desktop
 
 ### Textmate
 

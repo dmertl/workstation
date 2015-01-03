@@ -4,3 +4,4 @@
   homebrew_cask: name={{ item }} state=installed
   with_items:
     - drobo-dashboard
+    - plex-home-theater
