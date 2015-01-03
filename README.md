@@ -15,6 +15,7 @@ Personal workstation configuration
 - Sentact VPN
 - General solution for log_www, need logging directory config?
 - Add some variables into .profile for setting things like theme and log directory
+- Solarized themes used in switching during SSH
 
 ## App Store
 
