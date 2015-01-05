@@ -16,6 +16,7 @@ Personal workstation configuration
 - General solution for log_www, need logging directory config?
 - Add some variables into .profile for setting things like theme and log directory
 - Solarized themes used in switching during SSH
+- Solve Omnigraffle problem, currently requiring app store login (Jose's)
 
 ## App Store
 
@@ -68,6 +69,13 @@ Configuration settings that are easier set through the applications that config 
 
 - Trackpad - Scroll & Zoom - Scroll Direction: Natural - Off
 - Mission Control - Hot Corners - Top Right - Show Desktop
+- Security and Privacy - General - Allow app downloads from - Anywhere
+- Dock - Automatically hide and show dock
+
+### Messages
+
+- Add accounts, gmail, onzra, AIM
+- General - Application - Save history when conversations are closed
 
 ### Textmate
 
