@@ -9,6 +9,7 @@
   homebrew: name={{ item }} state=installed
   with_items:
     - git
+    - git-flow
     - mysql
     - python
     - php56
