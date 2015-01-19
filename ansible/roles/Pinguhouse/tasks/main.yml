@@ -5,3 +5,4 @@
   with_items:
     - drobo-dashboard
     - plex-home-theater
+    - tigervnc-viewer
