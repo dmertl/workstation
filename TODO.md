@@ -9,8 +9,8 @@
 - Sentact VPN
 - General solution for log_www, need logging directory config?
 - Add some variables into .profile for setting things like theme and log directory
-- Solarized themes used in switching during SSH
-- Solve Omnigraffle problem, currently requiring app store login (Jose's)
+- Ability to switch themes using ssh config (make production pink)
+- Commands to start/stop apache, mysql, etc. that work with homebrew
 
 ### VI
 
