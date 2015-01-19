@@ -12,6 +12,7 @@
   homebrew: name={{ item }} state=installed
   with_items:
     - brew-cask
+    - grc
 
 - name: Install common apps
   homebrew_cask: name={{ item }} state=installed
@@ -25,3 +26,5 @@
     - transmission
     - usb-overdrive
     - vlc
+
+- include: osx.yml
