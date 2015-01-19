@@ -32,7 +32,7 @@ function theme {
 # Switches theme when SSHing
 # TODO: have this function parse .ssh/config and look for Theme declaration to switch to per ssh config or use Steve's thing
 function ssh {
-	theme "Solarized Dark ansi"
+	theme "Solarized Dark"
 	/usr/bin/ssh "$@"
 	theme "Peppermint"
 }
