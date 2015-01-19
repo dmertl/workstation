@@ -2,3 +2,6 @@
 
 - name: Set scroll direction to "unnatural"
   command: defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+- name: Disable autocorrect
+  command: defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
