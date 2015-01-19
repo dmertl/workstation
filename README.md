@@ -27,6 +27,7 @@ App Store apps need to be installed through the App Store application.
 - Numbers
 - Garageband
 - iMovie
+- Microsoft Remote Desktop
 
 ## Other Apps
 
@@ -64,6 +65,8 @@ Configuration settings that are easier set through the applications that config 
 - Add Peppermint theme.
  - https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
  - Set as default and open new window theme. 
+- Add solarized themes.
+ - https://github.com/tomislav/osx-terminal.app-colors-solarized
 
 ### Preferences
 
