@@ -4,6 +4,7 @@
   homebrew_tap: name={{ item }} state=present
   with_items:
     - homebrew/php
+    - homebrew/apache
 
 - name: Install dev CLI apps
   homebrew: name={{ item }} state=installed
@@ -11,11 +12,13 @@
     - git
     - git-flow
     - mysql
+    - pandoc
     - python
     - php56
     - php56-xdebug
     - sqlite
     - subversion
+    - httpd22
 
 - name: Install dev applications
   homebrew_cask: name={{ item }} state=installed
