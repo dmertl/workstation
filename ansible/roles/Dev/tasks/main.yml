@@ -9,6 +9,7 @@
 - name: Install dev CLI apps
   homebrew: name={{ item }} state=installed
   with_items:
+    - composer
     - git
     - git-flow
     - mysql
