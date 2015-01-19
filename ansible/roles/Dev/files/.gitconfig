@@ -1,3 +1,12 @@
 [user]
-	name = dmertl
-	email = dmertl@gmail.com
+
+name = dmertl
+email = dmertl@gmail.com
+  
+[push]
+
+default = simple
+
+[merge]
+
+conflictstyle = diff3
