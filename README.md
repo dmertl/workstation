@@ -4,20 +4,6 @@ Personal workstation configuration
 
     ansible-playbook main.yml
 
-### TODO
-
-- Get more .profile settings from work computer
-- Get more .gitconfig settings from work computer
-- Other dotfiles?
-- PHPStorm config
-- PyCharm config
-- ONZRA VPN
-- Sentact VPN
-- General solution for log_www, need logging directory config?
-- Add some variables into .profile for setting things like theme and log directory
-- Solarized themes used in switching during SSH
-- Solve Omnigraffle problem, currently requiring app store login (Jose's)
-
 ## App Store
 
 App Store apps need to be installed through the App Store application.
