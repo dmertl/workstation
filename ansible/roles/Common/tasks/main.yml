@@ -29,3 +29,12 @@
     - vlc
 
 - include: osx.yml
+
+- name: Add automation scripts
+  copy: src=Automation dest=~/Documents/
+
+- name: Add avatar profile photos
+  copy: src=Avatars dest=~/Pictures/
+
+- name: Add Cheat Sheets
+  copy: src="Cheat Sheets" dest=~/Documents/Programming/
