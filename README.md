@@ -42,8 +42,6 @@ Configuration settings that are easier set through the applications that config 
  - Add
   - dmertl
   - Pictues
-- Advanced - Show all filename extensions
-- Advanced - When performing a search - Search the Current Folder
 - Add dev folder to sidebar
 
 ### Terminal
@@ -53,10 +51,6 @@ Configuration settings that are easier set through the applications that config 
  - Set as default and open new window theme. 
 - Add solarized themes.
  - https://github.com/tomislav/osx-terminal.app-colors-solarized
-
-### Preferences
-
-- Security and Privacy - General - Allow app downloads from - Anywhere
 
 ### Messages
 

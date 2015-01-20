@@ -9,6 +9,7 @@
 - Add some variables into .profile for setting things like theme and log directory
 - Ability to switch themes using ssh config (make production pink)
 - Commands to start/stop apache, mysql, etc. that work with homebrew
+- Other fun stuff in: https://github.com/mathiasbynens/dotfiles/
 
 ### VI
 
