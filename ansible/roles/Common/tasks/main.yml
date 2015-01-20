@@ -2,6 +2,7 @@
 
 - name: Update homebrew
   command: brew update
+  tags: update
 
 - name: Tap homebrew repos
   homebrew_tap: name={{ item }} state=present

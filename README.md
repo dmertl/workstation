@@ -56,10 +56,7 @@ Configuration settings that are easier set through the applications that config 
 
 ### Preferences
 
-- Trackpad - Scroll & Zoom - Scroll Direction: Natural - Off
-- Mission Control - Hot Corners - Top Right - Show Desktop
 - Security and Privacy - General - Allow app downloads from - Anywhere
-- Dock - Automatically hide and show dock
 
 ### Messages
 
@@ -74,3 +71,9 @@ Configuration settings that are easier set through the applications that config 
 ### Misc
 
 - Start and login to all authenticated apps
+
+## References
+
+### OS X Defaults
+
+https://github.com/mathiasbynens/dotfiles/blob/master/.osx
