@@ -6,6 +6,12 @@
     - homebrew/php
     - homebrew/apache
 
+- name: Install httpd
+  homebrew: name=httpd22 state=installed
+
+- name: Install PHP
+  homebrew: name=php56 install_options=with-apache,homebrew-apxs state=installed
+
 - name: Install dev CLI apps
   homebrew: name={{ item }} state=installed
   with_items:
@@ -15,11 +21,9 @@
     - mysql
     - pandoc
     - python
-    - php56
     - php56-xdebug
     - sqlite
     - subversion
-    - httpd22
 
 - name: Install dev applications
   homebrew_cask: name={{ item }} state=installed
@@ -36,3 +40,6 @@
   with_items:
     - .gitconfig
     - .profile
+
+- name: Copy httpd.conf
+  copy: src=httpd.conf dest=/usr/local/etc/apache2/2.2/httpd.conf

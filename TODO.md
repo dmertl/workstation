@@ -1,5 +1,7 @@
 # TODO
 
+- httpd.conf
+- add vendor/bin to path
 - Other dotfiles?
 - PHPStorm config
 - PyCharm config

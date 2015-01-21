@@ -2,7 +2,7 @@
 
 Personal workstation configuration
 
-    ansible-playbook main.yml --ask-sudo-pass
+    ansible-playbook main.yml
 
 ## App Store
 
