@@ -46,11 +46,7 @@ Configuration settings that are easier set through the applications that config 
 
 ### Terminal
 
-- Add Peppermint theme.
- - https://noahfrederick.com/get/Peppermint.1.2.terminal.zip
- - Set as default and open new window theme. 
-- Add solarized themes.
- - https://github.com/tomislav/osx-terminal.app-colors-solarized
+- Set Peppermint as the default theme and the startup theme.
 
 ### Messages
 
@@ -71,3 +67,8 @@ Configuration settings that are easier set through the applications that config 
 ### OS X Defaults
 
 https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+
+### Terminal Themes
+
+- Peppermint: https://noahfrederick.com/log/lion-terminal-theme-peppermint/
+- Solarized: https://github.com/tomislav/osx-terminal.app-colors-solarized
