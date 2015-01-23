@@ -14,6 +14,18 @@
 - Rsync backgrounds with NAS
 - Rsync music with NAS
 - Licenses? Maybe store encrypted on NAS and copy over as separate command.
+- Fonts. Inconsolata. Consolas.
+
+### PHPStorm color schemes
+
+Add color scheme XML files.
+
+    ~/Library/Preferences/WebIde80/colors/Obsidian.xml
+
+Set global color scheme.
+
+    ~/Library/Preferences/WebIde80/options/colors.scheme.xml
+    <global_color_scheme name="Obsidian" />
 
 ### VI
 
