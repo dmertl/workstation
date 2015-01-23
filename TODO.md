@@ -1,6 +1,5 @@
 # TODO
 
-- Other dotfiles?
 - PHPStorm config
 - PyCharm config
 - ONZRA VPN
@@ -12,6 +11,9 @@
 - Other fun stuff in: https://github.com/mathiasbynens/dotfiles/
 - Solarized theme for other apps
 - Create peppermint theme for PHPStorm / TextMate?
+- Rsync backgrounds with NAS
+- Rsync music with NAS
+- Licenses? Maybe store encrypted on NAS and copy over as separate command.
 
 ### VI
 
