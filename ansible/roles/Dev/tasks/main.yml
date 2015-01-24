@@ -43,8 +43,10 @@
 
 - name: Copy httpd.conf
   copy: src=httpd.conf dest=/usr/local/etc/apache2/2.2/httpd.conf
+  
+- name: Install vagrant plugins
+  command: vagrant plugin install vagrant-hostsupdater
 
 - name: Install terminal themes
   command: "open '{{ item }}'"
   with_fileglob: "*.terminal"
-  tags: test
