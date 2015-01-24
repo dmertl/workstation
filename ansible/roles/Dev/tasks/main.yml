@@ -35,6 +35,11 @@
     - virtualbox
     - vmware-fusion
 
+- name: Install python packages
+  pip: name={{ item }} state=present
+  with_items:
+    - virtualenv
+
 - name: Copy dotfiles
   copy: src={{ item }} dest=~/{{ item }}
   with_items:
