@@ -35,6 +35,7 @@
     - vagrant
     - virtualbox
     - vmware-fusion
+    - xquartz
 
 - name: Install python packages
   pip: name={{ item }} state=present
