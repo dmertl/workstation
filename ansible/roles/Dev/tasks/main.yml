@@ -18,6 +18,7 @@
     - composer
     - git
     - git-flow
+    - mercurial
     - mysql
     - pandoc
     - python
