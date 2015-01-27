@@ -1,4 +1,9 @@
 ---
+  
+- name: Install Pinghouse CLI tools
+  homebrew: name={{ item }} state=installed
+  with_items:
+    - unison
 
 - name: Install Pinghouse apps
   homebrew_cask: name={{ item }} state=installed
