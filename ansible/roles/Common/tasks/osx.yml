@@ -49,9 +49,6 @@
   
 - name: Use list view in all Finder windows by default
   command: defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-
-- name: Empty Trash securely by default
-  command: defaults write com.apple.finder EmptyTrashSecurely -bool true
   
 - name: Show the ~/Library folder
   command: chflags nohidden ~/Library
