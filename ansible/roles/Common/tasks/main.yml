@@ -19,6 +19,7 @@
   homebrew_cask: name={{ item }} state=installed
   with_items:
     - cleanmymac
+    - cyberduck
     - evernote
     - firefox
     - google-chrome
