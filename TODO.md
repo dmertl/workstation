@@ -1,22 +1,20 @@
 # TODO
 
-- Script for resizing backgrounds. Fit within 5120x2880 (imac 5k res). Warn if below 2560x1440.
- - Or maybe some kind of ls wrapper that lists them with colors based on resolution.
+- Fonts. Inconsolata. Consolas.
 - PHPStorm config
 - PyCharm config
 - ONZRA VPN
 - Sentact VPN
-- General solution for log_www, need logging directory config?
+- Create log_www alias for logging dev applications
 - Add some variables into .profile for setting things like theme and log directory
 - Ability to switch themes using ssh config (make production pink)
 - Commands to start/stop apache, mysql, etc. that work with homebrew
 - Other fun stuff in: https://github.com/mathiasbynens/dotfiles/
 - Solarized theme for other apps
 - Create peppermint theme for PHPStorm / TextMate?
-- Rsync backgrounds with NAS
 - Rsync music with NAS
-- Licenses? Maybe store encrypted on NAS and copy over as separate command.
-- Fonts. Inconsolata. Consolas.
+- Script for resizing backgrounds. Fit within 5120x2880 (imac 5k res). Warn if below 2560x1440.
+ - Or maybe some kind of ls wrapper that lists them with colors based on resolution.
 
 ### PHPStorm color schemes
 
