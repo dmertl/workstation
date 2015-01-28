@@ -1,0 +1,2 @@
+#!/bin/bash
+unison -auto -batch -perms 0 -ignore "Name .DS_Store" /Users/dmertl/Pictures/Backgrounds/ /Volumes/Public/Pictures/Backgrounds/

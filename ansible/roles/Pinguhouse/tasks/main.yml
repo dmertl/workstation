@@ -11,3 +11,7 @@
     - drobo-dashboard
     - plex-home-theater
     - tigervnc-viewer
+
+- name: Add automation scripts
+  copy: src={{ item }} dest=~/Documents/Automation/Scripts/ mode=0755
+  with_fileglob: Automation/Scripts/*
