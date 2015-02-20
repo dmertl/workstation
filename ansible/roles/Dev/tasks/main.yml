@@ -42,7 +42,6 @@
   with_items:
     - beautifulsoup4
     - virtualenv
-  tags: dome
 
 - name: Copy dotfiles
   copy: src={{ item }} dest=~/{{ item }}
