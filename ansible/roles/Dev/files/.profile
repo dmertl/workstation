@@ -21,6 +21,9 @@ alias xdebug_profile_off='unset XDEBUG_CONFIG'
 # Logging
 alias log_www='clear; echo -n -e "\033]0;Logging WWW\007"; tail -fqn0 /opt/local/var/db/mysql55/*.err /opt/local/apache2/logs/error_log'
 
+# Helpers
+alias copy_sshkey='cat ~/.ssh/id_rsa.pub | pbcopy'
+
 # SSH alias tab completion
 complete -o default -o nospace -W "$(/usr/bin/env ruby -ne 'puts $_.split(/[,\s]+/)[1..-1].reject{|host| host.match(/\*|\?/)} if $_.match(/^\s*Host\s+/);' < $HOME/.ssh/config)" scp sftp ssh
 

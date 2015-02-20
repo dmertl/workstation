@@ -15,6 +15,9 @@
 - Rsync music with NAS
 - Script for resizing backgrounds. Fit within 5120x2880 (imac 5k res). Warn if below 2560x1440.
  - Or maybe some kind of ls wrapper that lists them with colors based on resolution.
+- Personalization
+ - Screensaver that creates random Marathon terminals
+ - Login ASCII text message
 
 ### PHPStorm color schemes
 
