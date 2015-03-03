@@ -51,6 +51,9 @@
 
 - name: Copy httpd.conf
   copy: src=httpd.conf dest=/usr/local/etc/apache2/2.2/httpd.conf
+
+- name: Copy php.ini
+  copy: src=php.ini dest=/usr/local/etc/php/5.6/php.ini
   
 - name: Install vagrant plugins
   command: vagrant plugin install vagrant-hostsupdater
