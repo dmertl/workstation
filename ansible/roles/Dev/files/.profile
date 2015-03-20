@@ -8,6 +8,7 @@ source "`brew --prefix grc`/etc/grc.bashrc"
 
 # Configuration
 export SVN_EDITOR=vi
+export ONZRA_SSHCONFIG_EMAIL="dave@onzra.com"
 
 # Shell Commands
 alias ls='ls -GFlh'
