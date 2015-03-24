@@ -26,7 +26,6 @@
     - php56-xdebug
     - sqlite
     - subversion
-  tags: test
 
 - name: Install dev applications
   homebrew_cask: name={{ item }} state=installed
