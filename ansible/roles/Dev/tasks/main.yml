@@ -20,8 +20,10 @@
     - git-flow
     - mercurial
     - mysql
+    - nmap
     - pandoc
     - python
+    - php56-apcu
     - php56-mcrypt
     - php56-xdebug
     - sqlite
