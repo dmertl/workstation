@@ -10,6 +10,7 @@
   with_items:
     - drobo-dashboard
     - plex-home-theater
+    - teamviewer
     - tigervnc-viewer
 
 - name: Add automation scripts
