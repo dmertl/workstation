@@ -4,6 +4,3 @@
   connection: local
   roles:
     - Common
-    - Dev
-    - Gaming
-    - Pinguhouse

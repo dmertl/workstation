@@ -31,7 +31,6 @@ if [[ ! -x /usr/local/bin/brew ]]; then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-
 # Download and install Ansible
 if [[ ! -x /usr/local/bin/ansible ]]; then
     echo "Info   | Install   | Ansible"
