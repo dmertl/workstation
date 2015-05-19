@@ -2,7 +2,16 @@
 
 Personal workstation configuration
 
+- Install XCode
+- Edit main.yml and change the user to your username.
+
+Open a terminal and run:
+
+    cd ansible
+    ./bootstrap.sh
     ansible-playbook main.yml
+
+For non-deveploment setup see the [no-development branch](../../tree/no-development)
 
 ## App Store
 
