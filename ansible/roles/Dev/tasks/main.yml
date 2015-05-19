@@ -5,6 +5,7 @@
   with_items:
     - homebrew/php
     - homebrew/apache
+    - homebrew/services
 
 - name: Install httpd
   homebrew: name=httpd22 state=installed
