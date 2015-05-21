@@ -48,10 +48,10 @@
     - virtualenv
 
 - name: Copy dotfiles
-  copy: src={{ item }} dest=~/{{ item }}
+  copy: src={{ item }} dest=~/.{{ item }}
   with_items:
-    - .gitconfig
-    - .profile
+    - gitconfig
+    - profile
 
 - name: Copy httpd.conf
   copy: src=httpd.conf dest=/usr/local/etc/apache2/2.2/httpd.conf
