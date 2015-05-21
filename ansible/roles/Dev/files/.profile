@@ -42,4 +42,4 @@ function ssh {
 }
 
 #Path update
-export PATH=vendor/bin:$PATH:$HOME/.rvm/bin
+export PATH=vendor/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin
