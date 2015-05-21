@@ -1,7 +1,7 @@
 ---
   
 - name: Install Pinghouse CLI tools
-  homebrew: name={{ item }} state=installed
+  homebrew: name={{ item }} state=latest
   with_items:
     - unison
 

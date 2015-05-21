@@ -8,13 +8,13 @@
     - homebrew/services
 
 - name: Install httpd
-  homebrew: name=httpd22 state=installed
+  homebrew: name=httpd22 state=latest
 
 - name: Install PHP
-  homebrew: name=php56 install_options=with-apache,homebrew-apxs state=installed
+  homebrew: name=php56 install_options=with-apache,homebrew-apxs state=latest
 
 - name: Install dev CLI apps
-  homebrew: name={{ item }} state=installed
+  homebrew: name={{ item }} state=latest
   with_items:
     - composer
     - git
@@ -42,7 +42,7 @@
     - xquartz
 
 - name: Install python packages
-  pip: name={{ item }} state=present
+  pip: name={{ item }} state=latest
   with_items:
     - beautifulsoup4
     - virtualenv

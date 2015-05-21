@@ -10,7 +10,7 @@
     - caskroom/cask
 
 - name: Install CLI tools
-  homebrew: name={{ item }} state=installed
+  homebrew: name={{ item }} state=latest
   with_items:
     - brew-cask
     - grc
