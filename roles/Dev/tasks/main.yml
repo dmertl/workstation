@@ -104,11 +104,6 @@
   command: "open '{{ item }}'"
   with_fileglob: "*.terminal"
 
-- name: Add Cheat Sheets
-  copy: src="Cheat Sheets" dest={{ home_dir }}/Documents/Programming/
-
-- include: osx.yml
-
 - name: Start apache
   command: brew services restart httpd22
 
