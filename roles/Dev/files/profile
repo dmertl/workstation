@@ -19,9 +19,6 @@ alias xdebug_off='unset XDEBUG_CONFIG'
 alias xdebug_profile_on='export XDEBUG_CONFIG="idekey=PHPStorm profiler_enable=1"'
 alias xdebug_profile_off='unset XDEBUG_CONFIG'
 
-# Logging
-alias log_www='clear; echo -n -e "\033]0;Logging WWW\007"; tail -fqn0 /opt/local/var/db/mysql55/*.err /opt/local/apache2/logs/error_log'
-
 # Helpers
 alias copy_sshkey='cat ~/.ssh/id_rsa.pub | pbcopy'
 

@@ -1,3 +1,16 @@
 ---
 
-# 
+# User's home directory
+home_dir: /Users/{{ ansible_ssh_user }}
+
+# Web root directory
+htdocs_dir: /usr/local/var/www/htdocs
+
+# Path to apache httpd.conf file
+httpd_conf: /usr/local/etc/apache2/2.2/httpd.conf
+
+# Path to apache conf.d directory
+httpd_confd: /usr/local/opt/httpd22/conf.d
+
+# Path to php.ini file
+php_ini: /usr/local/etc/php/5.6/php.ini
