@@ -39,7 +39,6 @@ Configuration settings that are easier set through the applications that config 
 
 ### Finder
 
-- Remove All My Files
 - New Finder windows show - dmertl
 - Open folders in tabs instead of new windows - No
 - Sidebar
