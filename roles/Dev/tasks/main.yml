@@ -59,23 +59,7 @@
 - name: Touch SSH config file
   file: path=~/.ssh/config state=touch
 
-- name: Configure apache to run as user
-  replace: dest="{{ httpd_conf }}" regexp="^User .+$" replace="User {{ ansible_ssh_user }}"
-
-- name: Add index.php to apache index files
-  replace: dest="{{ httpd_conf }}" regexp="^(\s*)DirectoryIndex index.html$" replace="\1DirectoryIndex index.html index.php"
-
-- name: Add apache PHP handler
-  lineinfile: dest="{{ httpd_conf }}" line="AddHandler php5-script .php"
-
-- name: Add apache PHP handler
-  lineinfile: dest="{{ httpd_conf }}" line="AddType text/html .php"
-
-- name: Create apache conf.d directory
-  file: path={{ httpd_confd }} state=directory
-
-- name: Apache configuration for dev directory
-  template: src=httpd_confd/dev.conf dest={{ httpd_confd }}/dev.conf
+- include: apache.yml
 
 - name: Add xdebug section to php.ini
   lineinfile: dest={{ php_ini }} line=[xdebug] state=present insertbefore="; Local Variables:"

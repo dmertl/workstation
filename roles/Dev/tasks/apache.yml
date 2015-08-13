@@ -1,0 +1,33 @@
+---
+  
+# Apache configuration
+
+- name: Configure apache to run as user
+  replace: dest="{{ httpd_conf }}" regexp="^User .+$" replace="User {{ ansible_ssh_user }}"
+
+- name: Add index.php to apache index files
+  replace: dest="{{ httpd_conf }}" regexp="^(\s*)DirectoryIndex index.html$" replace="\1DirectoryIndex index.html index.php"
+
+- name: Add apache PHP handler
+  lineinfile: dest="{{ httpd_conf }}" line="AddHandler php5-script .php"
+
+- name: Add PHP file type
+  lineinfile: dest="{{ httpd_conf }}" line="AddType text/html .php"
+
+- name: Enable virtual hosts
+  lineinfile: dest="{{ httpd_conf }}" line="NameVirtualHost *:80"
+
+- name: Set server name
+  replace: dest="{{ httpd_conf }}" regexp="^#ServerName www.example.com:8080$" replace="ServerName 127.0.0.1"
+
+- name: Listen on port 80
+  replace: dest="{{ httpd_conf }}" regexp="^Listen 8080$" replace="Listen 80"
+
+- name: Create apache conf.d directory
+  file: path={{ httpd_confd }} state=directory
+
+- name: Apache configuration for dev directory
+  template: src=httpd_confd/dev.conf dest={{ httpd_confd }}/dev.conf
+
+- name: Include configs from conf.d
+  lineinfile: dest="{{ httpd_conf }}" line="Include /usr/local/opt/httpd22/conf.d/*.conf"
