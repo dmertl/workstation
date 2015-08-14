@@ -63,11 +63,9 @@
 
 - name: Add xdebug section to php.ini
   lineinfile: dest={{ php_ini }} line=[xdebug] state=present insertbefore="; Local Variables:"
-  tags: test
 
 - name: Enable xdebug in php.ini
   lineinfile: dest={{ php_ini }} line="xdebug.remote_enable = 1" state=present insertafter="\[xdebug\]"
-  tags: test
 
 - name: Create dev directory
   file: path={{ home_dir }}/dev state=directory
