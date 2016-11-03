@@ -45,7 +45,7 @@ function theme {
 #   #Theme Red Sands
 
 function ssh {
-	theme "Pro"
+    theme "Pro"
 
     HOSTNAME=`echo $@ | sed s/.*@//`
 
