@@ -38,10 +38,34 @@ function theme {
 	NAME=$1; if [ -z "$NAME" ]; then NAME="Peppermint"; fi
 	osascript -e "tell application \"Terminal\" to set current settings of front window to settings set \"$NAME\""
 }
+
 # Switches theme when SSHing
-# TODO: have this function parse .ssh/config and look for Theme declaration to switch to per ssh config or use Steve's thing
+# Parse .ssh/config to set theme using #Theme declaration (#Theme since .ssh/config only accepts valid config options):
+# Host sample.local.dev
+#   #Theme Red Sands
+
 function ssh {
-	theme "Solarized Dark"
+	theme "Pro"
+
+    HOSTNAME=`echo $@ | sed s/.*@//`
+
+    T=$(awk -v host=$HOSTNAME '
+        $1 == "Host" && $2 == host {
+            found=1;
+            next;
+        }
+        $1 == "#Theme" && found == "1" {
+            $1="";
+            print $0;
+            exit;
+        }
+    ' .ssh/config | sed 's/^ *//g' | sed 's/ *$//g')
+
+    if [ "$T" ]; then
+        echo "Using Theme \"$T\" for \"$HOSTNAME\" from .ssh/config.";
+        theme "$T";
+    fi
+
 	/usr/bin/ssh "$@"
 	theme "Peppermint"
 }
