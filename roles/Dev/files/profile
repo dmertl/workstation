@@ -59,7 +59,7 @@ function ssh {
             print $0;
             exit;
         }
-    ' .ssh/config | sed 's/^ *//g' | sed 's/ *$//g')
+    ' $HOME/.ssh/config | sed 's/^ *//g' | sed 's/ *$//g')
 
     if [ "$T" ]; then
         echo "Using Theme \"$T\" for \"$HOSTNAME\" from .ssh/config.";
